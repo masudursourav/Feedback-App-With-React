@@ -1,4 +1,5 @@
 import './App.css';
+import FeedbackItems from './Componets/FeedbackItems';
 import Header from './Componets/Header';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
     <Header/>
     <div className="container">
+      <FeedbackItems/>
     </div>
     </>
   );
