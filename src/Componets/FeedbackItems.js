@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import {FaTimes} from 'react-icons/fa'
+import Card from './Shared/Card';
 
-const FeedbackItems = () => {
-    const[rating,setRating] = useState(7);
-    const[text,setText] = useState('this is the text');
+const FeedbackItems = ({item,handelDelete}) => {
     return (
-        <div className='card'>
-            <div className="num-display">{rating}</div>
-            <div className="text-display">{text}</div>
-        </div>
+        <Card>
+            <div className="num-display">{item.rating}</div>
+            <button className='close' onClick={() => handelDelete(item.id)}> <FaTimes color='blue'/></button>
+            <div className="text-display">{item.text}</div>
+        </Card>
     );
 };
 
