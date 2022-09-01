@@ -6,7 +6,7 @@ const Button = ({children,version,type,isDisable}) => {
     );
 };
 
-Button.defaultProbs={
+Button.defaultProps={
     version: 'primary',
     type:'button',
     isDisable:false
