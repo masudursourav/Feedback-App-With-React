@@ -8,6 +8,7 @@ import FeedbackStats from './Componets/FeedbackStats';
 import Header from './Componets/Header';
 import FeedbackData from './data/FeedbackData';
 import About from './Pages/About';
+import AboutIconLink from './Componets/AboutIconLink';
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
   const deleteFeedback = (id) => {
@@ -37,6 +38,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       </Routes>
     </div>
+    <AboutIconLink/>
     </Router>
   );
 }
